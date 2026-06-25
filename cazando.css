@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: Arial, sans-serif;
-  background: #f0f0f0;
+  background: #ddfdcf;
   margin: 0;
   padding: 20px;
 }
@@ -39,4 +39,9 @@ button {
   font-weight: bold;
   color: darkred;
   margin-top: 15px;
+}
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-weight: bold;
 }
