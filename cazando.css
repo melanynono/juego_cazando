@@ -1,13 +1,14 @@
 body {
   text-align: center;
   font-family: Arial, sans-serif;
-  background: #ddfdcf;
+  background-image: url(fondo.png);
   margin: 0;
   padding: 20px;
 }
 
 h1 {
   margin-bottom: 5px;
+  color: rgb(5, 5, 92);
 }
 
 .panel {
@@ -44,4 +45,13 @@ p{
   font-family: 'Times New Roman', Times, serif;
   font-style: oblique;
   font-weight: bold;
+}
+
+button{
+  background-color: rgb(77, 171, 199);
+}
+
+span{
+  color: rgb(9, 102, 29);
+  font-size: 25px;
 }
