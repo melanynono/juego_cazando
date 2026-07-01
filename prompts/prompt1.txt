@@ -1,0 +1,65 @@
+PROMPT 1: Mejora de Interfaz Gráfica del Juego "Cazando"
+
+Fecha: [Generado por IA]
+Objetivo: Mejorar la apariencia visual del juego utilizando únicamente HTML y CSS
+
+INSTRUCCIONES RECIBIDAS:
+========================
+
+Quiero mejorar la interfaz gráfica de mi juego "Cazando" utilizando únicamente HTML y CSS.
+
+IMPORTANTE:
+- No modifiques el archivo JavaScript bajo ninguna circunstancia.
+- Mantén todos los IDs, clases y elementos que son utilizados por JavaScript para que el juego siga funcionando correctamente.
+- Solo realiza cambios visuales y de diseño en los archivos HTML y CSS.
+
+OBJETIVOS DE MEJORA:
+====================
+
+1. Crear una apariencia moderna, atractiva y profesional.
+2. Centrar el contenido de la página y mejorar la distribución de los elementos.
+3. Diseñar un encabezado llamativo con el nombre del juego.
+4. Mejorar la visualización del puntaje y el tiempo restante.
+5. Agregar colores armónicos y una paleta visual relacionada con un juego de caza de comida.
+6. Incorporar sombras, bordes redondeados y efectos visuales modernos.
+7. Mejorar la apariencia de los botones (Iniciar, Reiniciar, etc.) con efectos hover.
+8. Hacer que el diseño sea responsive para que se vea correctamente en diferentes tamaños de pantalla.
+9. Mantener el canvas como elemento principal del juego y resaltarlo visualmente.
+
+ENTREGABLES:
+============
+
+1. Entregar el código HTML y CSS completo indicando claramente qué cambios se realizaron.
+2. Explicar brevemente cada modificación propuesta para facilitar su implementación.
+3. Agregar el código (total o parcial) en los archivos correspondientes y verificar su correcto funcionamiento mediante pruebas.
+
+DOCUMENTACIÓN:
+==============
+
+Dentro de la carpeta del proyecto, crear una subcarpeta llamada "prompts":
+- En esta carpeta, guardar el historial de prompts utilizados con la IA.
+- Crear un archivo llamado prompt1.txt e incluir el primer prompt que se utilizó.
+
+IDS Y ELEMENTOS CRÍTICOS QUE NO DEBEN MODIFICARSE:
+==================================================
+
+- id="areaJuego" (canvas del juego)
+- id="puntos" (muestra el puntaje)
+- id="tiempo" (muestra el tiempo restante)
+- id="mensaje" (muestra mensajes de estado)
+- onclick="moverArriba()"
+- onclick="moverAbajo()"
+- onclick="moverIzquierda()"
+- onclick="moverDerecha()"
+- onclick="reiniciarJuego()"
+- onload="iniciarJuego()" (en el body)
+
+RESTRICCIONES:
+==============
+
+✓ Solo modificar HTML y CSS
+✓ Mantener toda la funcionalidad JavaScript intacta
+✓ Preservar todos los IDs y eventos onclick
+✓ No alterar la lógica del juego
+✗ No modificar cazando.js
+✗ No modificar utilitarios.js

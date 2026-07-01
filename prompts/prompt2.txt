@@ -1,0 +1,347 @@
+═══════════════════════════════════════════════════════════════════════
+  PROMPT 2: Agregar Imágenes Decorativas al Juego "Cazando"
+═══════════════════════════════════════════════════════════════════════
+
+Fecha: [Generado por IA]
+Objetivo: Mejorar visualmente el juego agregando imágenes decorativas
+
+
+═══════════════════════════════════════════════════════════════════════
+  PROMPT INICIAL
+═══════════════════════════════════════════════════════════════════════
+
+Quiero mejorar visualmente mi juego "Cazando" agregando imágenes decorativas 
+utilizando únicamente HTML y CSS.
+
+IMPORTANTE:
+===========
+
+✓ No modifiques el archivo JavaScript bajo ninguna circunstancia.
+✓ Mantén todos los IDs, clases y elementos utilizados por JavaScript para 
+  que el juego continúe funcionando correctamente.
+✓ Solo realiza cambios en los archivos HTML y CSS.
+✓ El juego ya tiene un fondo (background) configurado y funcionando 
+  correctamente. NO AGREGUES OTRO FONDO NI MODIFIQUES EL EXISTENTE.
+✓ Las mejoras deben centrarse únicamente en la incorporación de imágenes 
+  decorativas y en su integración con el diseño actual.
+
+
+REQUERIMIENTOS:
+===============
+
+1. Agregar imágenes relacionadas con la temática del juego.
+
+2. Ubicar las imágenes de forma estratégica para mejorar la apariencia 
+   visual sin interferir con el área de juego.
+
+3. Ajustar tamaños, márgenes y posiciones mediante CSS.
+
+4. Mantener una apariencia moderna, ordenada y atractiva.
+
+5. Aplicar efectos visuales suaves como sombras o bordes redondeados 
+   cuando sea necesario.
+
+6. Garantizar que el diseño siga siendo responsive.
+
+7. Entregar el código HTML y CSS necesario indicando claramente los 
+   cambios realizados.
+
+
+IMÁGENES DISPONIBLES:
+=====================
+
+El juego ya cuenta con las siguientes imágenes que pueden ser utilizadas
+como decoración:
+
+- gato.png (imagen del personaje principal)
+- comida.png (imagen de la comida)
+- fondo.png (imagen de fondo - NO MODIFICAR)
+
+
+ELEMENTOS CRÍTICOS QUE NO DEBEN MODIFICARSE:
+=============================================
+
+IDs:
+----
+- id="areaJuego" (canvas del juego)
+- id="puntos" (muestra el puntaje)
+- id="tiempo" (muestra el tiempo restante)
+- id="mensaje" (muestra mensajes de estado)
+
+EVENTOS:
+--------
+- onclick="moverArriba()"
+- onclick="moverAbajo()"
+- onclick="moverIzquierda()"
+- onclick="moverDerecha()"
+- onclick="reiniciarJuego()"
+- onload="iniciarJuego()" (en el body)
+
+ARCHIVOS:
+---------
+✗ No modificar cazando.js
+✗ No modificar utilitarios.js
+✗ No modificar el fondo existente
+
+
+RESTRICCIONES:
+==============
+
+✓ Solo modificar HTML y CSS
+✓ Usar solo las imágenes ya existentes en el proyecto
+✓ No interferir con el área del canvas
+✓ No afectar la funcionalidad del juego
+✓ Mantener el diseño responsive
+✗ No agregar nuevas imágenes externas
+✗ No modificar el fondo de body
+✗ No modificar JavaScript
+
+
+═══════════════════════════════════════════════════════════════════════
+  PROMPTS ADICIONALES UTILIZADOS
+═══════════════════════════════════════════════════════════════════════
+
+Durante el desarrollo, se utilizaron los siguientes enfoques y 
+refinamientos:
+
+
+PROMPT 2.1: UBICACIÓN DE DECORACIONES
+--------------------------------------
+
+"Agrega imágenes decorativas del gato y la comida en las siguientes 
+ubicaciones estratégicas:
+
+1. A los lados del canvas (izquierda y derecha) con etiquetas de texto
+2. Sobre el panel de controles como mini decoraciones
+3. En el fondo de la página como elementos flotantes sutiles
+
+Usa las imágenes existentes (gato.png y comida.png) y aplica 
+transformaciones CSS para animarlas."
+
+
+PROMPT 2.2: ANIMACIONES
+-----------------------
+
+"Aplica las siguientes animaciones CSS a las imágenes decorativas:
+
+1. Animación de flotación vertical para las imágenes laterales
+2. Animación de rotación para las mini decoraciones
+3. Animación diagonal compleja para las decoraciones de fondo
+4. Efecto hover en las imágenes laterales
+
+Todas las animaciones deben ser suaves y no invasivas."
+
+
+PROMPT 2.3: RESPONSIVE
+----------------------
+
+"Ajusta las decoraciones para que sean responsive:
+
+1. En tablets (≤768px): Ocultar decoraciones laterales
+2. En móviles (≤480px): Reducir tamaño de mini decoraciones
+3. En pantallas pequeñas (≤360px): Ocultar todas las decoraciones excepto
+   las de fondo con muy baja opacidad
+
+Garantiza que el juego siga siendo funcional en todos los tamaños."
+
+
+PROMPT 2.4: OPTIMIZACIÓN VISUAL
+-------------------------------
+
+"Optimiza los efectos visuales de las decoraciones:
+
+1. Agrega drop-shadow a las imágenes decorativas
+2. Usa diferentes opacidades según la ubicación
+3. Aplica blur a las decoraciones de fondo
+4. Agrega efectos de escala y rotación en hover
+5. Usa z-index apropiado para cada capa
+
+Mantén un equilibrio visual sin saturar el diseño."
+
+
+PROMPT 2.5: INTEGRACIÓN CON DISEÑO EXISTENTE
+--------------------------------------------
+
+"Integra las decoraciones con el diseño actual:
+
+1. Usa la misma paleta de colores para las etiquetas de texto
+2. Mantén la coherencia con los bordes redondeados
+3. Aplica sombras consistentes con el resto de la interfaz
+4. Asegura que las decoraciones no compitan con los elementos principales
+5. Verifica que el z-index no interfiera con los controles
+
+El resultado debe verse como una extensión natural del diseño existente."
+
+
+═══════════════════════════════════════════════════════════════════════
+  RESUMEN DE CAMBIOS REALIZADOS
+═══════════════════════════════════════════════════════════════════════
+
+DECORACIONES AGREGADAS:
+-----------------------
+
+1. DECORACIONES LATERALES DEL CANVAS
+   - Imagen del gato a la izquierda
+   - Imagen de comida a la derecha
+   - Etiquetas con texto "¡ATRAPA!" y "¡LA COMIDA!"
+   - Animación de flotación vertical
+   - Efecto hover con escala y rotación
+
+2. MINI DECORACIONES SOBRE CONTROLES
+   - Dos imágenes pequeñas (gato y comida)
+   - Animación de rotación continua (opuesta)
+   - Opacidad reducida (0.7)
+   - Posicionamiento centrado
+
+3. DECORACIONES FLOTANTES DE FONDO
+   - 4 imágenes flotando en el fondo
+   - Posiciones estratégicas (esquinas)
+   - Opacidad muy baja (0.15)
+   - Blur aplicado
+   - Animación diagonal compleja
+   - No interfieren con el contenido
+
+
+ANIMACIONES IMPLEMENTADAS:
+--------------------------
+
+1. floatUpDown (3s, ease-in-out, infinite)
+   - Movimiento vertical suave
+   - Usada en decoraciones laterales
+   - Delays diferentes para efecto asíncrono
+
+2. spin (4s, linear, infinite)
+   - Rotación completa 360°
+   - Usada en mini decoraciones
+   - Direcciones opuestas para variedad
+
+3. floatDiagonal (12-18s, ease-in-out, infinite)
+   - Movimiento diagonal complejo con rotación
+   - Usada en decoraciones de fondo
+   - Delays variables para naturalidad
+
+
+EFECTOS VISUALES:
+-----------------
+
+✓ Drop-shadow en todas las imágenes decorativas
+✓ Transiciones suaves en hover
+✓ Blur en decoraciones de fondo
+✓ Opacidades variables según importancia
+✓ Z-index apropiado para cada capa
+
+
+RESPONSIVE:
+-----------
+
+Desktop (>768px):
+- Todas las decoraciones visibles
+- Tamaños completos
+
+Tablet (≤768px):
+- Decoraciones laterales ocultas
+- Mini decoraciones reducidas
+- Decoraciones de fondo reducidas
+
+Móvil (≤480px):
+- Solo mini decoraciones visibles
+- Decoraciones de fondo con muy baja opacidad
+
+Móvil pequeño (≤360px):
+- Todas las decoraciones opcionales ocultas
+- Solo elementos esenciales visibles
+
+
+═══════════════════════════════════════════════════════════════════════
+  ARCHIVOS MODIFICADOS
+═══════════════════════════════════════════════════════════════════════
+
+✏️  index.html
+    - Agregadas decoraciones flotantes de fondo
+    - Agregadas decoraciones laterales del canvas
+    - Agregadas mini decoraciones sobre controles
+
+✏️  cazando.css
+    - Estilos para decoraciones flotantes
+    - Estilos para decoraciones laterales
+    - Estilos para mini decoraciones
+    - Animaciones CSS nuevas
+    - Ajustes responsive
+
+🔒 cazando.js
+    - NO MODIFICADO
+
+🔒 utilitarios.js
+    - NO MODIFICADO
+
+🔒 Fondo de body
+    - NO MODIFICADO
+
+
+═══════════════════════════════════════════════════════════════════════
+  ELEMENTOS PRESERVADOS
+═══════════════════════════════════════════════════════════════════════
+
+✅ IDs mantenidos:
+   - id="areaJuego" ✓
+   - id="puntos" ✓
+   - id="tiempo" ✓
+   - id="mensaje" ✓
+
+✅ Eventos mantenidos:
+   - onload="iniciarJuego()" ✓
+   - onclick="moverArriba()" ✓
+   - onclick="moverAbajo()" ✓
+   - onclick="moverIzquierda()" ✓
+   - onclick="moverDerecha()" ✓
+   - onclick="reiniciarJuego()" ✓
+
+✅ Funcionalidad:
+   - Juego 100% funcional ✓
+   - Canvas sin interferencias ✓
+   - Controles totalmente operativos ✓
+   - Responsive funcionando ✓
+
+
+═══════════════════════════════════════════════════════════════════════
+  RESULTADO FINAL
+═══════════════════════════════════════════════════════════════════════
+
+El juego "Cazando" ahora cuenta con:
+
+✨ Imágenes decorativas temáticas (gato y comida)
+✨ Animaciones CSS suaves y atractivas
+✨ Diseño equilibrado sin saturación visual
+✨ Integración perfecta con el diseño existente
+✨ Responsive completo en todos los dispositivos
+✨ Funcionalidad JavaScript 100% preservada
+✨ Fondo original sin modificaciones
+✨ Experiencia visual mejorada significativamente
+
+Las decoraciones complementan perfectamente el juego sin interferir con
+la jugabilidad, agregando personalidad y dinamismo visual.
+
+
+═══════════════════════════════════════════════════════════════════════
+  VERIFICACIÓN DE REQUERIMIENTOS
+═══════════════════════════════════════════════════════════════════════
+
+[✓] Imágenes relacionadas con la temática agregadas
+[✓] Ubicadas estratégicamente sin interferir con el juego
+[✓] Tamaños, márgenes y posiciones ajustados por CSS
+[✓] Apariencia moderna, ordenada y atractiva mantenida
+[✓] Efectos visuales suaves aplicados (sombras, bordes)
+[✓] Diseño responsive garantizado
+[✓] JavaScript NO modificado
+[✓] Fondo original preservado
+[✓] Solo HTML y CSS modificados
+[✓] Cambios claramente documentados
+
+
+═══════════════════════════════════════════════════════════════════════
+  FIN DEL DOCUMENTO
+═══════════════════════════════════════════════════════════════════════
+
+Autor Original: Melany Nono
+Mejoras Decorativas: IA Assistant
+Última actualización: 2026

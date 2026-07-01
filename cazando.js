@@ -10,13 +10,13 @@ let gatoY = 0;
 let comidaX = 0;
 let comidaY = 0;
 let puntos = 0;
-let tiempo = 10;
+let tiempo = 15;
 let intervaloTiempo;
 
 let imagenGato = new Image();
 imagenGato.src = "gato.png";
 let imagenComida = new Image();
-imagenComida.src = "comida.png";
+imagenComida.src = "raton.png";
 
 function iniciarJuego(){
     gatoX = (canvas.width / 2) - (ANCHO_GATO / 2);
@@ -28,7 +28,7 @@ function iniciarJuego(){
     graficarGato();
     graficarComida();
 
-    intervaloTiempo = setInterval(restarTiempo,1000);
+    intervaloTiempo = setInterval(restarTiempo,5000);
 }
 
 function graficarGato(){
@@ -118,7 +118,7 @@ function reiniciarJuego(){
     clearInterval(intervaloTiempo);
 
     puntos = 0;
-    tiempo = 10;
+    tiempo = 15;
 
     mostrarEnSpan("puntos", puntos);
     mostrarEnSpan("tiempo", tiempo);

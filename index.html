@@ -3,114 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎮 Cat Hunter - Juego Cazando</title>
+  <title>🎮 Juego Cazando - Atrapa la Comida</title>
+  <!-- Google Fonts para tipografía moderna -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cazando.css">
   <script src="utilitarios.js"></script>
 </head>
 <body onload="iniciarJuego();">
 
-  <!-- Partículas animadas de fondo -->
-  <div class="particles">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
+  <!-- Decoraciones flotantes -->
+  <div class="decorations">
+    <img src="gato.png" class="decoration-img decoration-cat-top" alt="Decoración gato">
+    <img src="comida.png" class="decoration-img decoration-food-top" alt="Decoración comida">
+    <img src="gato.png" class="decoration-img decoration-cat-bottom" alt="Decoración gato">
+    <img src="comida.png" class="decoration-img decoration-food-bottom" alt="Decoración comida">
   </div>
 
-  <div class="game-container">
-    <!-- Header con diseño gaming -->
-    <div class="header">
-      <div class="title-wrapper">
-        <div class="game-badge">ARCADE</div>
-        <h1>
-          <span class="title-icon">🐱</span>
-          <span class="title-text">CAZADOR FELINO</span>
-          <span class="title-icon">🍖</span>
-        </h1>
-        <div class="subtitle">¡Atrapa toda la comida antes de que se acabe el tiempo!</div>
+  <!-- Contenedor principal centrado -->
+  <div class="main-container">
+    
+    <!-- Encabezado del juego -->
+    <header class="game-header">
+      <div class="header-badge">🎮 ARCADE GAME</div>
+      <h1 class="game-title">
+        <span class="title-emoji">🐱</span>
+        JUEGO CAZANDO
+        <span class="title-emoji">🍖</span>
+      </h1>
+      <p class="game-subtitle">¡Ayuda al gato a atrapar toda la comida antes de que se acabe el tiempo!</p>
+      <div class="author-badge">
+        <span class="author-icon">👤</span>
+        <span class="author-text">Creado por <strong>Melany Nono</strong></span>
       </div>
-      <p class="author">
-        <span class="author-label">CREADO POR</span>
-        <span class="author-name">MELANY NONO</span>
-      </p>
-    </div>
+    </header>
 
-    <!-- Panel de estadísticas mejorado -->
-    <div class="stats-container">
-      <div class="panel">
-        <div class="stat-box score-box">
-          <div class="stat-header">
-            <span class="stat-icon">🏆</span>
-            <span class="stat-label">PUNTOS</span>
-          </div>
-          <div class="stat-value" id="puntos">0</div>
-          <div class="stat-progress">
-            <div class="progress-bar"></div>
-          </div>
+    <!-- Panel de estadísticas -->
+    <div class="stats-panel">
+      <div class="stat-card stat-score">
+        <div class="stat-icon-wrapper">
+          <span class="stat-emoji">🏆</span>
         </div>
-        
-        <div class="stat-box time-box">
-          <div class="stat-header">
-            <span class="stat-icon">⏱️</span>
-            <span class="stat-label">TIEMPO</span>
-          </div>
-          <div class="stat-value" id="tiempo">10</div>
-          <div class="time-indicator">
-            <div class="time-bar"></div>
-          </div>
+        <div class="stat-info">
+          <span class="stat-label">PUNTOS</span>
+          <span class="stat-number" id="puntos">0</span>
+        </div>
+      </div>
+
+      <div class="stat-card stat-time">
+        <div class="stat-icon-wrapper">
+          <span class="stat-emoji">⏱️</span>
+        </div>
+        <div class="stat-info">
+          <span class="stat-label">TIEMPO</span>
+          <span class="stat-number" id="tiempo">15</span>
         </div>
       </div>
     </div>
 
-    <!-- Canvas con marco decorativo -->
-    <div class="canvas-wrapper">
-      <div class="canvas-frame">
-        <div class="corner top-left"></div>
-        <div class="corner top-right"></div>
-        <div class="corner bottom-left"></div>
-        <div class="corner bottom-right"></div>
+    <!-- Área del juego (Canvas) -->
+    <div class="game-area">
+      <!-- Decoración lateral izquierda -->
+      <div class="side-decoration side-left">
+        <img src="gato.png" class="side-img" alt="Gato">
+        <div class="side-label">¡ATRAPA!</div>
+      </div>
+
+      <div class="canvas-container">
         <canvas id="areaJuego" width="500" height="500"></canvas>
+        <div class="canvas-border"></div>
+      </div>
+
+      <!-- Decoración lateral derecha -->
+      <div class="side-decoration side-right">
+        <img src="raton.png" class="side-img" alt="Comida">
+        <div class="side-label">¡LA COMIDA!</div>
       </div>
     </div>
 
-    <!-- Controles rediseñados -->
-    <div class="controles">
-      <div class="controls-label">CONTROLES</div>
-      <div class="control-grid">
-        <div class="control-row row-1">
-          <button class="btn-direction btn-up" onclick="moverArriba();">
-            <span class="btn-arrow">▲</span>
+    <!-- Panel de controles -->
+    <div class="controls-panel">
+      <!-- Decoración de mini imágenes sobre controles -->
+      <div class="mini-decorations">
+        <img src="gato.png" class="mini-deco" alt="mini gato">
+        <img src="raton.png" class="mini-deco" alt="mini comida">
+      </div>
+      <h3 class="controls-title">⌨️ CONTROLES</h3>
+      <div class="controls-grid">
+        <div class="control-row">
+          <button class="control-btn btn-up" onclick="moverArriba();" aria-label="Mover arriba">
+            ⬆️
           </button>
         </div>
-        <div class="control-row row-2">
-          <button class="btn-direction btn-left" onclick="moverIzquierda();">
-            <span class="btn-arrow">◀</span>
+        <div class="control-row">
+          <button class="control-btn btn-left" onclick="moverIzquierda();" aria-label="Mover izquierda">
+            ⬅️
           </button>
-          <button class="btn-direction btn-down" onclick="moverAbajo();">
-            <span class="btn-arrow">▼</span>
+          <button class="control-btn btn-down" onclick="moverAbajo();" aria-label="Mover abajo">
+            ⬇️
           </button>
-          <button class="btn-direction btn-right" onclick="moverDerecha();">
-            <span class="btn-arrow">▶</span>
+          <button class="control-btn btn-right" onclick="moverDerecha();" aria-label="Mover derecha">
+            ➡️
           </button>
         </div>
       </div>
-      <button class="btn-restart" onclick="reiniciarJuego();">
-        <span class="restart-icon">🔄</span>
-        <span class="restart-text">NUEVA PARTIDA</span>
+      
+      <button class="restart-btn" onclick="reiniciarJuego();">
+        <span class="btn-icon">🔄</span>
+        <span class="btn-text">REINICIAR JUEGO</span>
       </button>
     </div>
 
     <!-- Mensaje de estado -->
-    <div class="message-container">
-      <p id="mensaje"></p>
+    <div class="message-area">
+      <p id="mensaje" class="game-message"></p>
     </div>
+
   </div>
 
   <script src="cazando.js"></script>
